@@ -26,9 +26,9 @@ plt.show()
 kmeans=KMeans(n_clusters=5,init='k-means++',random_state=42)
 y=kmeans.fit_predict(x)
 
-kmeans.inertia_
+print(kmeans.inertia_)
 
-kmeans.labels_
+print(kmeans.labels_)
 
 plt.scatter(x[y==0]['Age'],x[y==0]['Spending_Score'],color='red',label='cluster1',s=30)
 plt.scatter(x[y==1]['Age'],x[y==1]['Spending_Score'],color='yellow',
